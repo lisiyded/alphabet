@@ -7,16 +7,7 @@ void	ft_putchar (int c)
 
 void 	ft_print_alphabet_with_write (void)
 {
-	char letter;
-
-
-	letter = 'a';
-
-	while (letter <= 'z')
-	{
-		write(1, &letter, 1);
-		letter = letter + 1;
-	}
+	write(1, "abcdefghijklmnopqrstuvwxyz", 26);
 	write(1, "\n", 1);
 }
 
