@@ -23,12 +23,16 @@ void	ft_putchar(int c)
 
 void	ft_putstr(char *s)
 
-{	
-	int len;
+{
+	int i;
 
 
-	len = ft_strlen(s);
-	write(1, &s[len], len);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
 }
 
 void	ft_putendl(char *s)
@@ -45,6 +49,3 @@ int	main(void)
 	ft_putstr("And this line ands here!");
 	return(0);
 }
-
-
-
